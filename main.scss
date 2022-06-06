@@ -1,0 +1,40 @@
+$background: #191919;
+$background_secondary: #241d28;
+$text: #473a54;
+html {
+  background-color: $background;
+}
+h1, h2, h3, h4 {
+  color: $text;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $background_secondary;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: $text;
+  text-align: center;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: $background;
+}
+
+#logo {
+  display: inherit;
+  padding: 0 !important;
+}
+div.pf-l-bullseye__item {
+  text-align: center;
+}
