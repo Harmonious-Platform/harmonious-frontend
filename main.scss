@@ -1,11 +1,15 @@
 $background: #191919;
 $background_secondary: #241d28;
 $text: #473a54;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 html {
   background-color: $background;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, li a {
   color: $text;
+  font-family: 'Ubuntu', sans-serif;
 }
 ul {
   list-style-type: none;
@@ -21,9 +25,8 @@ li {
 
 li a {
   display: block;
-  color: $text;
   text-align: center;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px 4px 16px;
   text-decoration: none;
 }
 
@@ -32,7 +35,7 @@ li a:hover {
 }
 
 #logo {
-  display: inherit;
+  display: block;
   padding: 0 !important;
 }
 div.pf-l-bullseye__item {

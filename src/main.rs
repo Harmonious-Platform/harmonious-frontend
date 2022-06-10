@@ -34,11 +34,11 @@ fn main() -> Html {
         <>
             <Nav>
                 <ul class={"navbar-ul"}>
-                    <NavItem><a href={"/"}><img src={ "https://cdn.discordapp.com/attachments/965680606962929707/965792629835038760/Harmonious_Logo_-_PREVIEW_VERSION.png" } width={ "47" } height= { "47" } id={ "logo" }/></a> </NavItem>
-                    <NavItem><Title level={Level::H4} size={Size::XLarge}><b>{"Login"}</b></Title></NavItem>
-                    <NavItem><Title level={Level::H4} size={Size::XLarge}><b>{"Sign Up"}</b></Title></NavItem>
-                    <NavItem><Title level={Level::H4} size={Size::XLarge}><b>{"Download"}</b></Title></NavItem>
-                    <NavItem><Title level={Level::H4} size={Size::XLarge}><b>{"About"}</b></Title></NavItem>
+                    <NavItem><a href={"/"} ><img id={ "logo" } src={ "https://cdn.discordapp.com/attachments/965680606962929707/965792629835038760/Harmonious_Logo_-_PREVIEW_VERSION.png" } width={ "47" } height= { "47" }/></a> </NavItem>
+                    <NavItem><Title level={Level::H3} size={Size::XLarge}><b>{"Login"}</b></Title></NavItem>
+                    <NavItem><Title level={Level::H3} size={Size::XLarge}><b>{"Sign Up"}</b></Title></NavItem>
+                    <NavItem><Title level={Level::H3} size={Size::XLarge}><b>{"Download"}</b></Title></NavItem>
+                    <NavItem><Title level={Level::H3} size={Size::XLarge}><b>{"About"}</b></Title></NavItem>
                     </ul>
             </Nav>
             <BrowserRouter>
