@@ -23,11 +23,22 @@ li {
   float: left;
 }
 
-li a {
+li a.pf-c-nav__link {
   display: block;
   text-align: center;
-  padding: 8px 16px 4px 16px;
   text-decoration: none;
+}
+li a.img {
+  display: block;
+  text-align: center;
+  padding: 12px 16px 12px 16px;
+  text-decoration: none;
+}
+li a.nav {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 6px 16px 6px 16px;
 }
 
 li a:hover {

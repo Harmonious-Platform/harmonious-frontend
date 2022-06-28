@@ -1,5 +1,5 @@
 use yew::prelude::*;
-use patternfly_yew::{Title, Level, Size, Bullseye};
+use patternfly_yew::{Title, Level, Size};
 #[function_component(IndexComponent)]
 pub fn index() -> Html {
     html! {

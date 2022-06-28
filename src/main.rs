@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 mod pages;
-use crate::pages::{index::IndexComponent, not_found::NotFound};
+use crate::pages::{index::IndexComponent, not_found::NotFound, about::AboutComponent};
 use patternfly_yew::{Nav, NavItem, Title, Level, Size};
 #[derive(Debug, Clone, Copy, PartialEq, Routable)]
 enum Route {
@@ -10,6 +10,8 @@ enum Route {
     #[not_found]
     #[at("/404")]
     NotFound,
+    #[at("/about")]
+    AboutComponent,
 }
 
 
@@ -25,6 +27,11 @@ fn switch(routes: &Route) -> Html {
                 <NotFound />
             }
         }
+        Route::AboutComponent => {
+            html! {
+                <AboutComponent />
+            }
+        }
 
     }
 }
@@ -34,12 +41,12 @@ fn main() -> Html {
         <>
             <Nav>
                 <ul class={"navbar-ul"}>
-                    <NavItem><a href={"/"} ><img id={ "logo" } src={ "https://cdn.discordapp.com/attachments/965680606962929707/965792629835038760/Harmonious_Logo_-_PREVIEW_VERSION.png" } width={ "47" } height= { "47" }/></a> </NavItem>
-                    <NavItem><Title level={Level::H3} size={Size::XLarge}><b>{"Login"}</b></Title></NavItem>
-                    <NavItem><Title level={Level::H3} size={Size::XLarge}><b>{"Sign Up"}</b></Title></NavItem>
-                    <NavItem><Title level={Level::H3} size={Size::XLarge}><b>{"Download"}</b></Title></NavItem>
-                    <NavItem><Title level={Level::H3} size={Size::XLarge}><b>{"About"}</b></Title></NavItem>
-                    </ul>
+                    <NavItem><a class="img" href={"/"}><img id={ "logo" } src={ "https://cdn.discordapp.com/attachments/965680606962929707/965792629835038760/Harmonious_Logo_-_PREVIEW_VERSION.png" } width={ "47" } height= { "47" }/></a></NavItem>
+                    <NavItem><a class="nav" href={"/login"}><Title level={Level::H3} size={Size::XLarge}><b>{"Login"}</b></Title></a></NavItem>
+                    <NavItem><a class="nav" href={"/signup"}><Title level={Level::H3} size={Size::XLarge}><b>{"Sign Up"}</b></Title></a></NavItem>
+                    <NavItem><a class="nav" href={"/download"}><Title level={Level::H3} size={Size::XLarge}><b>{"Download"}</b></Title></a></NavItem>
+                    <NavItem><a class="nav" href={"/about"}><Title level={Level::H3} size={Size::XLarge}><b>{"About"}</b></Title></a></NavItem>
+                </ul>
             </Nav>
             <BrowserRouter>
                 <Switch<Route> render={Switch::render(switch)} />
@@ -52,3 +59,5 @@ fn main() {
     wasm_logger::init(wasm_logger::Config::new(log::Level::Trace));
     yew::start_app::<Main>();
 }
+// the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices 
+// the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices the voices 
