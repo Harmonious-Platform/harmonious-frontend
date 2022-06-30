@@ -4,6 +4,7 @@ use patternfly_yew::{Title, Level, Size};
 pub fn index() -> Html {
     html! {
         <>
+            <title>{"Harmonious - Home"}</title>
             <Title level={Level::H1} size={Size::XXXLarge}>{ "Harmonious" }</Title>
             
         </>

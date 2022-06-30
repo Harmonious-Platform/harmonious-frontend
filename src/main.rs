@@ -41,7 +41,7 @@ fn main() -> Html {
         <>
             <Nav>
                 <ul class={"navbar-ul"}>
-                    <NavItem><a class="img" href={"/"}><img id={ "logo" } src={ "https://cdn.discordapp.com/attachments/965680606962929707/965792629835038760/Harmonious_Logo_-_PREVIEW_VERSION.png" } width={ "47" } height= { "47" }/></a></NavItem>
+                    <NavItem><a class="img" href={"/"}><img id={ "logo" } src={ "harmonious.png" } width={ "47" } height= { "47" }/></a></NavItem>
                     <NavItem><a class="nav" href={"/download"}><Title level={Level::H3} size={Size::XLarge}><b>{"Download"}</b></Title></a></NavItem>
                     <NavItem><a class="nav" href={"/about"}><Title level={Level::H3} size={Size::XLarge}><b>{"About"}</b></Title></a></NavItem>
                 </ul>

@@ -4,6 +4,7 @@ use patternfly_yew::Bullseye;
 pub fn about() -> Html {
     html! {
         <>
+            <title>{"Harmonious - About"}</title>
             <Bullseye><h1>{"Harmonious"}</h1>
             <h3>{"Harmonious is an open source platform to chat with your friends in servers or direct messages and voice chat in VR or in the desktop app soon™."}</h3>
             <h3>{"Harmonious is customizable; meaning you can create your own themes!"}</h3>

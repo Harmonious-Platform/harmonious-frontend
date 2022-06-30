@@ -3,7 +3,7 @@ use patternfly_yew::{Title, Level, Size, Bullseye};
 #[function_component(NotFound)]
 pub fn not_found() -> Html {
     html! {
-        <>
+        <>  <title>{"Harmonious - 404"}</title>
             <Bullseye>
             <div>
                 <Title level={Level::H1} size={Size::XXXXLarge}>{ "Uhhh.... Nothing to see here" }</Title>
